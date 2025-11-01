@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import logo from '../assets/logo.jpeg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,8 +18,14 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-w flex items-center justify-between py-4">
-        <div className="text-2xl font-playfair font-semibold text-primary">
-          BUALIN Thai Spa
+        <div className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="BUALIN Thai Spa logo"
+            className="h-10 w-10 rounded-full object-cover shadow-md"
+            loading="lazy"
+          />
+          <span className="text-2xl font-playfair font-semibold text-primary">BUALIN Thai Spa</span>
         </div>
         <div className="hidden md:flex items-center gap-6 text-ink">
           {[
