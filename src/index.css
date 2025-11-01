@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+@theme {
+  --color-primary: #C57B57;
+  --color-beige: #F8EBDD;
+  --color-ink: #2F2F2F;
+  --color-gold: #D4AF37;
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: Inter, system-ui, sans-serif;
+  --font-lato: Lato, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-white text-ink font-inter antialiased;
+}
+
+.container-w {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-primary text-white rounded-full px-6 py-3 hover:bg-primary/80 transition-all duration-300 ease-in-out shadow-md;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-md p-6 transition-all duration-300 ease-in-out;
+}
