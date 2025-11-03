@@ -12,21 +12,21 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      <Element name="home">
-        <Hero />
-      </Element>
+  <Element name="home">
+    <Hero />
+  </Element>
 
-      <Element name="services">
-        <Services />
-      </Element>
+  <Element name="promotions">
+    <Promotions />
+  </Element>
 
-      <Element name="about">
-        <About />
-      </Element>
+  <Element name="services">
+    <Services />
+  </Element>
 
-      <Element name="promotions">
-        <Promotions />
-      </Element>
+  <Element name="about">
+    <About />
+  </Element>
 
       <Element name="reviews">
         <Reviews />
