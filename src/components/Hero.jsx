@@ -28,12 +28,12 @@ export default function Hero() {
           className="mt-8"
         >
           <a
-            href="https://line.me/R/ti/p/@bualin"
+            href="https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Book Your Session
+            Schedule a Session
           </a>
         </motion.div>
       </div>

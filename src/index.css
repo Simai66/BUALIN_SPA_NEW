@@ -44,3 +44,25 @@ body {
   background-image: radial-gradient(1000px 200px at 20% 0, var(--color-beige) 0%, transparent 60%),
                     radial-gradient(800px 180px at 80% 5%, var(--color-beige) 0%, transparent 60%);
 }
+
+/* Add-ons UI utilities */
+.addon-card {
+  @apply bg-beige/20 backdrop-blur-sm rounded-xl p-4 border border-beige/50 hover:bg-beige/30 transition-all duration-300 ease-in-out flex items-center gap-4 shadow-sm hover:shadow-md;
+}
+
+.icon-circle {
+  @apply w-12 h-12 rounded-full bg-white ring-1 ring-beige/60 flex items-center justify-center shadow;
+}
+
+.price-pill {
+  @apply bg-primary text-white rounded-full px-3 py-1 text-xs font-semibold shadow-sm;
+}
+
+.btn-sm {
+  @apply px-3 py-2 text-sm rounded-full;
+}
+
+/* Base button to equalize sizes across variants */
+.btn {
+  @apply inline-flex items-center justify-center rounded-full h-10 px-5 text-sm font-medium transition-all duration-300 ease-in-out;
+}

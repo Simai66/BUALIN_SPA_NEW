@@ -32,8 +32,6 @@ export default function Navbar() {
             { to: 'home', label: 'Home' },
             { to: 'services', label: 'Services' },
             { to: 'about', label: 'About' },
-            { to: 'promotions', label: 'Promotions' },
-            { to: 'reviews', label: 'Reviews' },
             { to: 'contact', label: 'Contact' },
           ].map((item) => (
             <Link
@@ -50,7 +48,7 @@ export default function Navbar() {
           ))}
         </div>
         <a
-          href="https://line.me/R/ti/p/@bualin"
+          href="https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary"

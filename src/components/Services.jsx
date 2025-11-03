@@ -2,11 +2,18 @@ import { services, addons } from '../data/services';
 import thaiImg from '../assets/thai.svg';
 import aromaImg from '../assets/aroma.svg';
 import footImg from '../assets/foot.svg';
+import hotstoneImg from '../assets/hotstone.svg';
+import herbalImg from '../assets/herbal.svg';
 
 const images = {
   thai: thaiImg,
   aroma: aromaImg,
   foot: footImg,
+};
+
+const addonIcons = {
+  'Hot stone': hotstoneImg,
+  'Herbal compress': herbalImg,
 };
 
 export default function Services() {
@@ -17,13 +24,17 @@ export default function Services() {
         <p className="text-center text-ink/70 mb-8">Authentic Thai treatments with a gentle touch</p>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
-            <div key={s.id} className="card">
+            <div key={s.id} className="card h-full flex flex-col">
               <img
                 src={images[s.photo]}
                 alt={s.title}
                 className="h-36 w-full rounded-xl object-cover ring-1 ring-beige/40"
               />
               <h3 className="mt-4 text-xl font-semibold text-ink">{s.title}</h3>
+              {s.description && (
+                <p className="mt-2 text-ink/70 text-sm leading-relaxed">{s.description}</p>
+              )}
+              <div className="my-3 text-center text-beige/70">✦ ✧ ✦</div>
               <ul className="mt-2 space-y-2">
                 {s.items.map((it, idx) => (
                   <li key={idx} className="flex items-center justify-between text-sm">
@@ -32,28 +43,49 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 flex gap-3">
-                <a href="#" className="btn-outline">Learn More</a>
-                <a href="https://line.me/R/ti/p/@bualin" target="_blank" rel="noopener noreferrer" className="btn-primary">Book</a>
+              <div className="mt-auto pt-4 flex gap-3">
+                <a href="#" className="btn btn-outline">Learn More</a>
+                <a href="https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book</a>
               </div>
             </div>
           ))}
+        </div>
 
-          {/* Additional Services card */}
-          <div className="card">
-            <h3 className="text-xl font-semibold text-ink">Additional Services</h3>
-            <ul className="mt-2 space-y-2">
-              {addons.map((a, i) => (
-                <li key={i} className="flex items-center justify-between text-sm">
-                  <span className="text-ink/80">{a.title}</span>
-                  <span className="font-semibold text-primary">{a.price}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-4 flex gap-3">
-              <a href="#" className="btn-outline">Learn More</a>
-              <a href="https://line.me/R/ti/p/@bualin" target="_blank" rel="noopener noreferrer" className="btn-primary">Book</a>
+        {/* Additional Services - enhanced UI */}
+        <div className="mt-12">
+          <div className="flex items-end justify-between mb-4">
+            <div>
+              <h3 className="text-2xl font-playfair text-ink">Additional Services</h3>
+              <p className="text-ink/70 text-sm">Enhance your session with premium add-ons</p>
             </div>
+          </div>
+          {/* Add function to send message to LINE with price */}
+          {/**/}
+          {/**/}
+          {/* Inline handler for add-on */}
+          {/* We keep it simple to avoid affecting other parts */}
+          
+          <div className="grid gap-4 sm:grid-cols-2">
+            {addons.map((a, i) => (
+              <div key={i} className="addon-card" aria-label={`Add-on ${a.title} priced ${a.price}`}>
+                <div className="icon-circle">
+                  <img src={addonIcons[a.title]} alt="" className="w-7 h-7" />
+                </div>
+                <div className="flex-1">
+                <div className="flex items-center">
+                    <span className="font-semibold text-ink">{a.title}</span>
+                  </div>
+                  <p className="text-ink/60 text-xs mt-1">A perfect complement to your massage</p>
+                </div>
+                <button
+                  onClick={() => {
+                    const url = `https://line.me/R/msg/text/?${encodeURIComponent(msg)}`;
+                    window.open(url, '_blank');
+                  }}
+                  className="btn-primary btn-sm"
+                >{a.price}</button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

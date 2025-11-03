@@ -3,8 +3,6 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Services from './components/Services.jsx';
 import About from './components/About.jsx';
-import Promotions from './components/Promotions.jsx';
-import Reviews from './components/Reviews.jsx';
 import Contact from './components/Contact.jsx';
 
 function App() {
@@ -16,10 +14,6 @@ function App() {
     <Hero />
   </Element>
 
-  <Element name="promotions">
-    <Promotions />
-  </Element>
-
   <Element name="services">
     <Services />
   </Element>
@@ -27,10 +21,6 @@ function App() {
   <Element name="about">
     <About />
   </Element>
-
-      <Element name="reviews">
-        <Reviews />
-      </Element>
 
       {/* Booking section removed per request */}
 

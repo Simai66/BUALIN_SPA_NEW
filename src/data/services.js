@@ -1,14 +1,14 @@
-// บริการหลักและราคาตามภาพเมนูที่ให้มา
+// บริการหลักและราคาตามภาพเมนูล่าสุดที่ให้มา
 export const services = [
   {
     id: 'relaxing',
-    title: 'Relaxing Massage',
+    title: 'Relaxation Massage',
     photo: 'aroma',
+    description:
+      "Experience a shooting soft to medium pressure massage designed to melt away tention and restore ballance. it's come with warm aromatic essential oils to enhance relaxation, ease muscle stiffness, and clam the mind .",
     items: [
-      { duration: '30 Minutes', price: '$60' },
-      { duration: '45 Minutes', price: '$80' },
       { duration: '60 Minutes', price: '$95' },
-      { duration: '90 Minutes', price: '$140' },
+      { duration: '90 Minutes', price: '$135' },
       { duration: '120 Minutes', price: '$180' },
     ],
   },
@@ -16,23 +16,23 @@ export const services = [
     id: 'combination',
     title: 'Combination Massage',
     photo: 'foot',
+    description:
+      'This specialized treatment is a Thai Combination Massage that expertly fuses traditional Thai therapeutic techniques with the soothing, deep relaxation of an oil massage, all while utilizing warm coconut oil. This blend is specifically designed to provide intense stress relief and combat deep tiredness.',
     items: [
-      { duration: '30 Minutes', price: '$60' },
-      { duration: '45 Minutes', price: '$80' },
       { duration: '60 Minutes', price: '$95' },
-      { duration: '90 Minutes', price: '$140' },
+      { duration: '90 Minutes', price: '$135' },
       { duration: '120 Minutes', price: '$180' },
     ],
   },
   {
     id: 'thai',
-    title: 'Thai Traditional Massage',
+    title: 'Traditional Thai Massage',
     photo: 'thai',
+    description:
+      'Traditional Thai Massage (Nuad Thai) is a powerful healing art that blends deep compression with assisted yoga stretching. The therapist uses their body to apply targeted pressure to energy channels, effectively relieving chronic pain, restoring flexibility, and boosting your natural energy.',
     items: [
-      { duration: '30 Minutes', price: '$60' },
-      { duration: '45 Minutes', price: '$80' },
       { duration: '60 Minutes', price: '$95' },
-      { duration: '90 Minutes', price: '$140' },
+      { duration: '90 Minutes', price: '$135' },
       { duration: '120 Minutes', price: '$180' },
     ],
   },
@@ -40,7 +40,6 @@ export const services = [
 
 // บริการเสริม (Add-ons)
 export const addons = [
-  { title: 'Aromatherapy', price: '$10' },
-  { title: 'Hot Stone', price: '$10' },
-  { title: 'Herbal Compress', price: '$10' },
+  { title: 'Hot stone', price: '$15' },
+  { title: 'Herbal compress', price: '$15' },
 ];
