@@ -3,7 +3,13 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative pt-24">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-beige/30" />
+      {/* Background image layer */}
+      <div
+        className="absolute inset-0 -z-20 bg-center bg-cover"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600')" }}
+      />
+      {/* Soft gradient overlay for readability */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/70 via-white/50 to-beige/40" />
       <div className="container-w min-h-[60vh] flex flex-col items-center justify-center text-center py-16">
         <motion.h1
           initial={{ opacity: 0, y: 10 }}

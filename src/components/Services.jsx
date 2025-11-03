@@ -45,7 +45,7 @@ export default function Services() {
               </ul>
               <div className="mt-auto pt-4 flex gap-3">
                 <a href="#" className="btn btn-outline">Learn More</a>
-                <a href="https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book</a>
+                <a href={s.bookingUrl || 'https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start'} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book</a>
               </div>
             </div>
           ))}
