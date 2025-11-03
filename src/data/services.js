@@ -1,37 +1,46 @@
+// บริการหลักและราคาตามภาพเมนูที่ให้มา
 export const services = [
   {
+    id: 'relaxing',
+    title: 'Relaxing Massage',
+    photo: 'aroma',
+    items: [
+      { duration: '30 Minutes', price: '$60' },
+      { duration: '45 Minutes', price: '$80' },
+      { duration: '60 Minutes', price: '$95' },
+      { duration: '90 Minutes', price: '$140' },
+      { duration: '120 Minutes', price: '$180' },
+    ],
+  },
+  {
+    id: 'combination',
+    title: 'Combination Massage',
+    photo: 'foot',
+    items: [
+      { duration: '30 Minutes', price: '$60' },
+      { duration: '45 Minutes', price: '$80' },
+      { duration: '60 Minutes', price: '$95' },
+      { duration: '90 Minutes', price: '$140' },
+      { duration: '120 Minutes', price: '$180' },
+    ],
+  },
+  {
     id: 'thai',
-    title: 'Traditional Thai Massage',
-    durations: ['60 mins', '90 mins', '120 mins'],
-    price: 'From 800 THB',
-    image: '',
+    title: 'Thai Traditional Massage',
+    photo: 'thai',
+    items: [
+      { duration: '30 Minutes', price: '$60' },
+      { duration: '45 Minutes', price: '$80' },
+      { duration: '60 Minutes', price: '$95' },
+      { duration: '90 Minutes', price: '$140' },
+      { duration: '120 Minutes', price: '$180' },
+    ],
   },
-  {
-    id: 'aroma',
-    title: 'Aromatherapy Oil Massage',
-    durations: ['60 mins', '90 mins'],
-    price: 'From 900 THB',
-    image: '',
-  },
-  {
-    id: 'foot',
-    title: 'Foot Reflexology',
-    durations: ['45 mins'],
-    price: '600 THB',
-    image: '',
-  },
-  {
-    id: 'hotstone',
-    title: 'Hot Stone Therapy',
-    durations: ['60 mins', '90 mins'],
-    price: 'From 1,200 THB',
-    image: '',
-  },
-  {
-    id: 'herbal',
-    title: 'Herbal Compress Massage',
-    durations: ['90 mins'],
-    price: '1,400 THB',
-    image: '',
-  },
+];
+
+// บริการเสริม (Add-ons)
+export const addons = [
+  { title: 'Aromatherapy', price: '$10' },
+  { title: 'Hot Stone', price: '$10' },
+  { title: 'Herbal Compress', price: '$10' },
 ];
