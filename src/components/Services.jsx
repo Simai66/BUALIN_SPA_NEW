@@ -2,13 +2,20 @@ import { services, addons } from '../data/services';
 import thaiImg from '../assets/thai.svg';
 import aromaImg from '../assets/aroma.svg';
 import footImg from '../assets/foot.svg';
+// Real photos for services
+import photo1 from '../assets/photo.jpeg';
+import photo2 from '../assets/photo2.png';
+import photoRex from '../assets/photo_rex.png';
 import hotstoneImg from '../assets/hotstone.svg';
 import herbalImg from '../assets/herbal.svg';
 
+// Map service photo keys to actual images
+// We now use real photos for the three core services
 const images = {
-  thai: thaiImg,
-  aroma: aromaImg,
-  foot: footImg,
+  thai: photoRex,   // Traditional Thai Massage
+  aroma: photo1,    // Relaxation Massage
+  foot: photo2,     // Combination Massage
+  photo_rex: photoRex, // Fallback key used in services.js for Relaxation
 };
 
 const addonIcons = {

@@ -3,7 +3,7 @@ export const services = [
   {
     id: 'relaxing',
     title: 'Relaxation Massage',
-    photo: 'aroma',
+    photo: 'photo_rex',
     bookingUrl: 'https://book.squareup.com/appointments/5btap1cnsywghf/location/L78WC3SYY14NQ/services/ZWBRMP2ZD6TWLMEWO7AROBGY',
     description:
       "Experience a shooting soft to medium pressure massage designed to melt away tention and restore ballance. it's come with warm aromatic essential oils to enhance relaxation, ease muscle stiffness, and clam the mind .",

@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background image layer */}
       <div
         className="absolute inset-0 -z-20 bg-center bg-cover"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600')" }}
+        style={{ backgroundImage: "url('/images/hero-photo.jpeg')" }}
       />
       {/* Soft gradient overlay for readability */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/70 via-white/50 to-beige/40" />
