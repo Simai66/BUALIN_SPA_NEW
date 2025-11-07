@@ -30,11 +30,10 @@ function App() {
 
       <footer className="bg-primary text-white">
         <div className="container-w py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2025 BUALIN Thai Spa</p>
+          <p>© 2025 Bualin Thai Massage Therapy</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:opacity-80">LINE</a>
-            <a href="#" className="hover:opacity-80">Instagram</a>
-            <a href="#" className="hover:opacity-80">Facebook</a>
+            <a href="https://www.instagram.com/bualinthaimassage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">Instagram</a>
+            <a href="https://web.facebook.com/profile.php?id=61582898821738&locale=th_TH" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">Facebook</a>
           </div>
         </div>
       </footer>

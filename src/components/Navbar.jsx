@@ -21,11 +21,11 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <img
             src={logo}
-            alt="BUALIN Thai Spa logo"
+            alt="Bualin Thai Massage Therapy logo"
             className="h-10 w-10 rounded-full object-cover shadow-md"
             loading="lazy"
           />
-          <span className="text-2xl font-playfair font-semibold text-primary">BUALIN Thai Spa</span>
+          <span className="text-2xl font-playfair font-semibold text-primary">Bualin Thai Massage Therapy</span>
         </div>
         <div className="hidden md:flex items-center gap-6 text-ink">
           {[

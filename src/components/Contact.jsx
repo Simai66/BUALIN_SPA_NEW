@@ -10,7 +10,7 @@ export default function Contact() {
           <p>Suite 1 shop 10/670 Bellarine Highway , Leopold 3224</p>
           <a
             className="text-primary hover:text-primary/80"
-            href="https://maps.google.com/?q=BUALIN%20Thai%20Spa"
+            href="https://maps.google.com/?q=Bualin%20Thai%20Massage%20Therapy"
             target="_blank"
             rel="noreferrer"
           >
