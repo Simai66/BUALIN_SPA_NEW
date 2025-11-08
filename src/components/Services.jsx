@@ -6,8 +6,8 @@ import footImg from '../assets/foot.svg';
 import photo1 from '../assets/photo.jpeg';
 import photo2 from '../assets/photo2.png';
 import photoRex from '../assets/photo_rex.png';
-import hotstoneImg from '../assets/hotstone.svg';
-import herbalImg from '../assets/herbal.svg';
+import hotstoneImg from '../assets/Hot_stone.png';
+import herbalImg from '../assets/Herbal_comp.png';
 import photo4 from '../assets/photo4.png';
 import photoEiei from '../assets/photo-eiei.jpeg';
 import photo_1 from '../assets/photo_1.png';
@@ -104,7 +104,7 @@ export default function Services() {
             {addons.map((a, i) => (
               <div key={i} className="addon-card" aria-label={`Add-on ${a.title} priced ${a.price}`}>
                 <div className="icon-circle">
-                  <img src={addonIcons[a.title]} alt="" className="w-7 h-7" />
+                  <img src={addonIcons[a.title]} alt="" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                 <div className="flex items-center">

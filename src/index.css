@@ -51,7 +51,7 @@ body {
 }
 
 .icon-circle {
-  @apply w-12 h-12 rounded-full bg-white ring-1 ring-beige/60 flex items-center justify-center shadow;
+  @apply w-14 h-14 rounded-full overflow-hidden bg-white ring-1 ring-beige/60 flex items-center justify-center shadow;
 }
 
 .price-pill {
