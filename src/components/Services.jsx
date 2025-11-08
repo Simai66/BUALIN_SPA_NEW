@@ -8,6 +8,17 @@ import photo2 from '../assets/photo2.png';
 import photoRex from '../assets/photo_rex.png';
 import hotstoneImg from '../assets/hotstone.svg';
 import herbalImg from '../assets/herbal.svg';
+import photo4 from '../assets/photo4.png';
+import photoEiei from '../assets/photo-eiei.jpeg';
+import photo_1 from '../assets/photo_1.png';
+import photo3 from '../assets/photo3.png';
+import logoImg from '../assets/LOGO.jpeg';
+import spaBanner from '../assets/spa_banner.svg';
+import shop1 from '../assets/shop1.jpeg';
+import shop from '../assets/shop.jpeg';   
+import Hot_stone from '../assets/Hot_stone.png';
+import Herbal_comp from '../assets/Herbal_comp.png';
+
 
 // Map service photo keys to actual images
 // We now use real photos for the three core services
@@ -16,6 +27,24 @@ const images = {
   aroma: photo1,    // Relaxation Massage
   foot: photo2,     // Combination Massage
   photo_rex: photoRex, // Fallback key used in services.js for Relaxation
+  // Additional available images
+  photo: photo1,
+  photo2: photo2,
+  photo4: photo4,
+  photo_1: photo_1,
+  photo_eiei: photoEiei,
+  photo3: photo3,
+  logo: logoImg,
+  shop1: shop1,
+  shop: shop,
+  spa_banner: spaBanner,
+  // SVGs (if needed anywhere)
+  thai_svg: thaiImg,
+  aroma_svg: aromaImg,
+  foot_svg: footImg,
+  hotstoneImg: Hot_stone, 
+  herbalImg: Herbal_comp,
+
 };
 
 const addonIcons = {

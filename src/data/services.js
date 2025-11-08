@@ -3,7 +3,7 @@ export const services = [
   {
     id: 'relaxing',
     title: 'Relaxation Massage',
-    photo: 'photo_rex',
+    photo: 'photo2',
     bookingUrl: 'https://book.squareup.com/appointments/5btap1cnsywghf/location/L78WC3SYY14NQ/services/ZWBRMP2ZD6TWLMEWO7AROBGY',
     description:
       "Experience a shooting soft to medium pressure massage designed to melt away tention and restore ballance. it's come with warm aromatic essential oils to enhance relaxation, ease muscle stiffness, and clam the mind .",
@@ -16,7 +16,7 @@ export const services = [
   {
     id: 'combination',
     title: 'Combination Massage',
-    photo: 'foot',
+    photo: 'photo4',
     bookingUrl: 'https://book.squareup.com/appointments/5btap1cnsywghf/location/L78WC3SYY14NQ/services/UB7RBSE4EQDDL7ZLUWYUAY5P',
     description:
       'This specialized treatment is a Thai Combination Massage that expertly fuses traditional Thai therapeutic techniques with the soothing, deep relaxation of an oil massage, all while utilizing warm coconut oil. This blend is specifically designed to provide intense stress relief and combat deep tiredness.',
@@ -29,7 +29,7 @@ export const services = [
   {
     id: 'thai',
     title: 'Traditional Thai Massage',
-    photo: 'thai',
+    photo: 'photo_1',
     bookingUrl: 'https://book.squareup.com/appointments/5btap1cnsywghf/location/L78WC3SYY14NQ/services/6R3K376KL7PJXKBFNSQJQIKK',
     description:
       'Traditional Thai Massage (Nuad Thai) is a powerful healing art that blends deep compression with assisted yoga stretching. The therapist uses their body to apply targeted pressure to energy channels, effectively relieving chronic pain, restoring flexibility, and boosting your natural energy.',

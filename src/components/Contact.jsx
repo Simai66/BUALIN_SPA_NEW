@@ -1,3 +1,5 @@
+import shop from '../assets/shop.jpeg';
+
 export default function Contact() {
   return (
     <section className="py-16 bg-white">
@@ -10,14 +12,19 @@ export default function Contact() {
           <p>Suite 1 shop 10/670 Bellarine Highway , Leopold 3224</p>
           <a
             className="text-primary hover:text-primary/80"
-            href="https://maps.google.com/?q=Bualin%20Thai%20Massage%20Therapy"
+            href="https://maps.app.goo.gl/G8BzufMBjC2e8XzYA"
             target="_blank"
             rel="noreferrer"
           >
             View on Google Maps
           </a>
         </div>
-        <div className="mt-8 h-56 rounded-2xl bg-beige/50" />
+        <img
+          src={shop}
+          alt="Bualin Thai Massage Therapy shop front"
+          className="mt-4 w-full h-auto rounded-2xl ring-1 ring-beige/40"
+          loading="lazy"
+        />
       </div>
     </section>
   );
