@@ -1,0 +1,62 @@
+name: Deploy to Custom Domain
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to main branch
+  workflow_dispatch:  # Allow manual trigger from GitHub Actions tab
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      # Deploy files to server via SCP
+      - name: Deploy to Debian Server via SSH
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          source: "dist/*"
+          target: ${{ secrets.DEPLOY_PATH }}
+          strip_components: 1
+          rm: true
+          overwrite: true
+
+      # Execute post-deployment commands on server
+      - name: Execute post-deployment commands
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            cd ${{ secrets.DEPLOY_PATH }}
+            # Set proper permissions for web server
+            find . -type f -exec chmod 644 {} \;
+            find . -type d -exec chmod 755 {} \;
+            # Optional: Reload web server (uncomment as needed)
+            # sudo systemctl reload nginx
+            # sudo systemctl reload apache2
+            # sudo service nginx reload
+            echo "Deployment completed successfully at $(date)"

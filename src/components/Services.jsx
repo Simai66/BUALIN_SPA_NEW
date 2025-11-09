@@ -12,7 +12,7 @@ import photo4 from '../assets/photo4.png';
 import photoEiei from '../assets/photo-eiei.jpeg';
 import photo_1 from '../assets/photo_1.png';
 import photo3 from '../assets/photo3.png';
-import logoImg from '../assets/LOGO.jpeg';
+import logoImg from '../assets/logo.jpeg';
 import spaBanner from '../assets/spa_banner.svg';
 import shop1 from '../assets/shop1.jpeg';
 import shop from '../assets/shop.jpeg';   

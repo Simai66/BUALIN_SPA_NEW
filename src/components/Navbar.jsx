@@ -17,17 +17,19 @@ export default function Navbar() {
         scrolled ? 'bg-white/95 shadow-md backdrop-blur' : 'bg-transparent'
       }`}
     >
-      <nav className="container-w flex items-center justify-between py-4">
-        <div className="flex items-center gap-3">
+      <nav className="container-w flex items-center justify-between py-4 gap-2">
+        <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
           <img
             src={logo}
             alt="Bualin Thai Massage Therapy logo"
-            className="h-10 w-10 rounded-full object-cover shadow-md"
+            className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-md shrink-0"
             loading="lazy"
           />
-          <span className="text-2xl font-playfair font-semibold text-primary">Bualin Thai Massage Therapy</span>
+          <span className="text-base sm:text-lg lg:text-2xl font-playfair font-semibold text-primary truncate">
+            Bualin Thai Massage Therapy
+          </span>
         </div>
-        <div className="hidden md:flex items-center gap-6 text-ink">
+        <div className="hidden lg:flex items-center gap-6 text-ink shrink-0">
           {[
             { to: 'home', label: 'Home' },
             { to: 'services', label: 'Services' },
@@ -41,7 +43,7 @@ export default function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
-              className="cursor-pointer hover:text-primary transition-colors"
+              className="cursor-pointer hover:text-primary transition-colors whitespace-nowrap"
             >
               {item.label}
             </Link>
@@ -51,7 +53,7 @@ export default function Navbar() {
           href="https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary"
+          className="btn-primary text-sm sm:text-base whitespace-nowrap shrink-0"
         >
           Book Now
         </a>

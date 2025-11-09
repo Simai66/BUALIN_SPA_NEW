@@ -8,8 +8,8 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto text-center space-y-2 text-ink/80">
           <p>Open daily: 10:00 AM – 6:00 PM</p>
           <p>Tel: 0449532590</p>
-          <p>Facebook: Bualin Thai massage therapy   | IG: @bualinthaimassage</p>
-          <p>Suite 1 shop 10/670 Bellarine Highway , Leopold 3224</p>
+          <p>Facebook: Bualin Thai massage therapy | IG: @bualinthaimassage</p>
+          <p>Suite 1 shop 10/670 Bellarine Highway, Leopold 3224</p>
           <a
             className="text-primary hover:text-primary/80"
             href="https://maps.app.goo.gl/G8BzufMBjC2e8XzYA"
