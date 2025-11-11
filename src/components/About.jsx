@@ -26,7 +26,7 @@ const headerVariants = {
 const imageVariants = {
   hidden: { 
     opacity: 0, 
-    filter: 'blur(10px)',
+    filter: 'blur(16px)',
     scale: 0.9,
     y: 40
   },
@@ -38,8 +38,8 @@ const imageVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      damping: 10,
-      mass: 2 
+      damping: 30,
+      mass: 4 
     }
   }
 };
@@ -97,22 +97,40 @@ export default function About() {
           <Motion.img 
             src={Room1} 
             alt="Massage room 1" 
-            className="w-full h-40 sm:h-56 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
+            className="w-full h-50 sm:h-60 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
             loading="lazy"
+            whileHover={{
+              scaleX: 1.05,
+              borderRadius: "6px",
+              height: "calc(0.25rem * 70)",
+              transition: { type: "spring", stiffness: 300, damping: 20, mass: 2 }
+            }}
             variants={imageVariants}
           />
           <Motion.img 
             src={Room2} 
             alt="Massage room 2" 
-            className="w-full h-40 sm:h-56 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
+            className="w-full h-50 sm:h-60 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
             loading="lazy"
+            whileHover={{
+              scaleX: 1.05,
+              borderRadius: "6px",
+              height: "calc(0.25rem * 70)",
+              transition: { type: "spring", stiffness: 300, damping: 20, mass: 2 }
+            }}
             variants={imageVariants}
           />
           <Motion.img 
             src={Room3} 
             alt="Massage room 3" 
-            className="w-full h-40 sm:h-56 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
+            className="w-full h-50 sm:h-60 rounded-2xl object-cover ring-1 ring-beige/40 shadow-md" 
             loading="lazy"
+            whileHover={{
+              scaleX: 1.05,
+              borderRadius: "6px",
+              height: "calc(0.25rem * 70)",
+              transition: { type: "spring", stiffness: 300, damping: 20, mass: 2 }
+            }}
             variants={imageVariants}
           />
         </Motion.div>

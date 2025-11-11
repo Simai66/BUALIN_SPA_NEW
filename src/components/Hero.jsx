@@ -9,15 +9,15 @@ export default function Hero() {
   });
 
   // Transform scroll progress to opacity and blur
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const blur = useTransform(scrollYProgress, [0, 0.5], [0, 10]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.25]);
+  const blur = useTransform(scrollYProgress, [0, 0.5], [0, 16]);
 
   // Spring animation config
   const springConfig = {
     type: "spring",
     stiffness: 80,
-    damping: 15,
-    mass: 2,
+    damping: 40,
+    mass: 4,
     restDelta: 0.001
   };
 
@@ -35,25 +35,25 @@ export default function Hero() {
         style={{ opacity, filter: useTransform(blur, (value) => `blur(${value}px)`) }}
       >
         <Motion.h1
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 40, filter: "blur(16px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ ...springConfig, delay: 0.1 }}
+          transition={{ ...springConfig, delay: 0.5 }}
           className="text-4xl md:text-5xl font-playfair text-ink"
         >
           Relax. Heal. Rebalance.
         </Motion.h1>
         <Motion.p
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 40, filter: "blur(16px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ ...springConfig, delay: 0.25 }}
+          transition={{ ...springConfig, delay: 0.8 }}
           className="mt-4 max-w-2xl text-lg text-ink/80"
         >
           Experience authentic Thai massage for body and soul.
         </Motion.p>
         <Motion.div
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 40, filter: "blur(16px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ ...springConfig, delay: 0.4 }}
+          transition={{ ...springConfig, delay: 1 }}
           className="mt-8"
         >
           <a
