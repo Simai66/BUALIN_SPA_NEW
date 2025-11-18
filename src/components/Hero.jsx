@@ -15,9 +15,9 @@ export default function Hero() {
   // Spring animation config
   const springConfig = {
     type: "spring",
-    stiffness: 80,
-    damping: 40,
-    mass: 4,
+    stiffness: 100,
+    damping: 30,
+    mass: 2,
     restDelta: 0.001
   };
 
