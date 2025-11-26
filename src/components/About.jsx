@@ -77,9 +77,9 @@ function ImageCard({ src, alt, index, hoveredIndex, setHoveredIndex }) {
     offset: ["start end", "end start"]
   });
 
-  // Map scroll progress to height: starts at 140px, grows to 420px at center, back to 140px
-  const heightTransform = useTransform(scrollYProgress, [0, 0.5, 1], ["140px", "420px", "140px"]);
-  const height = useSpring(heightTransform, { stiffness: 300, damping: 30 });
+  // Map scroll progress to height: starts at 80px, grows to 320px at center, back to 80px
+  const heightTransform = useTransform(scrollYProgress, [0, 0.5, 1], ["80px", "320px", "80px"]);
+  const height = useSpring(heightTransform, { stiffness: 800, damping: 60 });
 
   // Desktop hover logic
   const isHovered = hoveredIndex === index;
@@ -92,8 +92,8 @@ function ImageCard({ src, alt, index, hoveredIndex, setHoveredIndex }) {
       style={{
         height: isMobile ? height : '240px',
       }}
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
+      onMouseEnter={() => !isMobile && setHoveredIndex(index)}
+      onMouseLeave={() => !isMobile && setHoveredIndex(null)}
       animate={{
         scale: isHovered ? 1.1 : isOtherHovered ? 0.9 : 1,
         height: isHovered ? '300px' : '240px',

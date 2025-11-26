@@ -15,7 +15,7 @@ import photo3 from '../assets/photo3.png';
 import logoImg from '../assets/logo.jpeg';
 import spaBanner from '../assets/spa_banner.svg';
 import shop1 from '../assets/shop1.jpeg';
-import shop from '../assets/shop.jpeg';   
+import shop from '../assets/shop.jpeg';
 import Hot_stone from '../assets/Hot_stone.png';
 import Herbal_comp from '../assets/Herbal_comp.png';
 
@@ -42,7 +42,7 @@ const images = {
   thai_svg: thaiImg,
   aroma_svg: aromaImg,
   foot_svg: footImg,
-  hotstoneImg: Hot_stone, 
+  hotstoneImg: Hot_stone,
   herbalImg: Herbal_comp,
 
 };
@@ -80,7 +80,7 @@ export default function Services() {
                 ))}
               </ul>
               <div className="mt-auto pt-4 flex gap-3">
-                <a href={s.bookingUrl || 'https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start'} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book</a>
+                <a href={s.bookingUrl || 'https://app.squareup.com/appointments/book/5btap1cnsywghf/L78WC3SYY14NQ/start'} target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full md:w-auto">Book</a>
               </div>
             </div>
           ))}
@@ -99,7 +99,7 @@ export default function Services() {
           {/**/}
           {/* Inline handler for add-on */}
           {/* We keep it simple to avoid affecting other parts */}
-          
+
           <div className="grid gap-4 sm:grid-cols-2">
             {addons.map((a, i) => (
               <div key={i} className="addon-card" aria-label={`Add-on ${a.title} priced ${a.price}`}>
@@ -107,7 +107,7 @@ export default function Services() {
                   <img src={addonIcons[a.title]} alt="" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
-                <div className="flex items-center">
+                  <div className="flex items-center">
                     <span className="font-semibold text-ink">{a.title}</span>
                   </div>
                   <p className="text-ink/60 text-xs mt-1">A perfect complement to your massage</p>

@@ -10,8 +10,8 @@ const SmoothScroll = ({ children }) => {
             gestureDirection: 'vertical', // vertical, horizontal, both
             smooth: true,
             mouseMultiplier: 1,
-            smoothTouch: false,
-            touchMultiplier: 2,
+            smoothTouch: true,
+            touchMultiplier: 1,
         });
 
         function raf(time) {
