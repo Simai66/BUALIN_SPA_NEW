@@ -3,6 +3,7 @@ import SmoothScroll from './components/SmoothScroll.jsx';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Services from './components/Services.jsx';
+import EGiftCards from './components/ecada.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 
@@ -18,6 +19,10 @@ function App() {
 
         <Element name="services">
           <Services />
+        </Element>
+
+        <Element name="giftcards">
+          <EGiftCards />
         </Element>
 
         <Element name="about">
@@ -46,3 +51,4 @@ function App() {
 }
 
 export default App;
+

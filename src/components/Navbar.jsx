@@ -13,9 +13,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? 'bg-white/95 shadow-md backdrop-blur' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? 'bg-white/95 shadow-md backdrop-blur' : 'bg-transparent'
+        }`}
     >
       <nav className="container-w flex items-center justify-between py-4 gap-2">
         <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
@@ -33,6 +32,7 @@ export default function Navbar() {
           {[
             { to: 'home', label: 'Home' },
             { to: 'services', label: 'Services' },
+            { to: 'giftcards', label: 'Gift Cards' },
             { to: 'about', label: 'About' },
             { to: 'contact', label: 'Contact' },
           ].map((item) => (
