@@ -18,14 +18,14 @@ export const giftCards = [
         id: 'egift-255',
         amount: '$255',
         title: 'Premium Package',
-        description: 'Three 1-hour massage sessions with complimentary Hot Stone Therapy & Foot Scrub Treatment',
+        description: 'Three 1-hour massage sessions with complimentary Hot Stone Therapy & Herbal Compress',
         popular: false,
     },
     {
         id: 'egift-340',
         amount: '$340',
         title: 'Ultimate Gift',
-        description: 'Four 1-hour massage sessions with complimentary Hot Stone Therapy & Foot Scrub Treatment',
+        description: 'Four 1-hour massage sessions with complimentary Hot Stone Therapy & Herbal Compress',
         popular: false,
     },
 ];
