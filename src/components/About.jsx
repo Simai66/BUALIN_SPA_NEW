@@ -78,8 +78,9 @@ function ImageCard({ src, alt, index, hoveredIndex, setHoveredIndex }) {
   });
 
   // Map scroll progress to height: starts at 80px, grows to 320px at center, back to 80px
-  const heightTransform = useTransform(scrollYProgress, [0, 0.5, 1], ["80px", "320px", "80px"]);
-  const height = useSpring(heightTransform, { stiffness: 800, damping: 60 });
+  const heightTransform = useTransform(scrollYProgress, [0, 0.5, 1], [80, 320, 80]);
+  const heightSpring = useSpring(heightTransform, { stiffness: 800, damping: 60 });
+  const height = useTransform(heightSpring, (value) => `${Math.round(value)}px`);
 
   // Desktop hover logic
   const isHovered = hoveredIndex === index;
