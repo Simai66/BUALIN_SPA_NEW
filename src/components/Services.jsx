@@ -114,6 +114,7 @@ export default function Services() {
                 </div>
                 <button
                   onClick={() => {
+                    const msg = `Hello Bualin Spa, I would like to add the "${a.title}" add-on to my booking.`;
                     const url = `https://line.me/R/msg/text/?${encodeURIComponent(msg)}`;
                     window.open(url, '_blank');
                   }}
