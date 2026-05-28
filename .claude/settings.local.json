@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/CATALOG.md\")",
+      "Bash(awk '/^## /{cat=$0} /^\\\\| `/{gsub\\(/\\\\| `|` \\\\|.*/, \"\", $0\\); gsub\\(/^[ \\\\t]+/, \"\", $0\\); print cat\": \"$0}')"
+    ]
+  },
+  "enabledPlugins": {}
+}
